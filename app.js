@@ -16,7 +16,7 @@ function adicionarAmigo() {
     return;
   }
 
-  // 🔁 NOVO: Normaliza o nome para comparação (sem diferenciar maiúsculas/minúsculas)
+  // Normaliza o nome para comparação (sem diferenciar maiúsculas/minúsculas)
   const nomeNormalizado = nomeDigitado.toLowerCase();
   const nomesNormalizados = listaDeAmigos.map(nome => nome.toLowerCase());
 
