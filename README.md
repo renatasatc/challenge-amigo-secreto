@@ -18,7 +18,7 @@ Esse projeto é um desafio da Oracle Next Education (One) em parceiria com a Alu
 
 Acesse a versão ao vivo da aplicação:
 
-🔗 [challenge-amigo-secreto.vercel.app](https://challenge-amigo-secreto.vercel.app)  
+🔗 [challenge-amigo-secreto.vercel.app](https://challenge-amigo-secreto-self.vercel.app/)  
 🔗 [Versão no GitHub Pages](https://renatasatc.github.io/challenge-amigo-secreto/)
 
 ## Como usar localmente
