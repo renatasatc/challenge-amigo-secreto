@@ -1,4 +1,4 @@
-// Guarda os nomes dos participantes
+// Guarda os nomes dos participantes/
 const listaDeAmigos = [];
 
 /**
