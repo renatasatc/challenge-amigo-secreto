@@ -94,9 +94,6 @@ function sortearAmigo() {
   resultado.appendChild(itemResultado);
 }
 
-// Guarda os nomes dos participantes
-const listaDeAmigos = [];
-
 /**
  * Função chamada ao clicar no botão "Adicionar"
  */
