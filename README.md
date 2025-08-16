@@ -24,7 +24,7 @@ Acesse a versão ao vivo da aplicação:
 ## Como usar localmente
 
 1. **Clone este repositório**:
-     git clone https://github.com/seu-usuario/amigo-secreto.git
+      git clone https://github.com/renatasatc/challenge-amigo-secreto.git
 
 2. Acesse a pasta do projeto:
    cd amigo-secreto
