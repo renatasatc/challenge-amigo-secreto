@@ -93,7 +93,7 @@ function sortearAmigo() {
   itemResultado.textContent = `O amigo secreto sorteado é: ${amigoSorteado}`;
   resultado.appendChild(itemResultado);
 }
-=======
+
 // Guarda os nomes dos participantes
 const listaDeAmigos = [];
 
