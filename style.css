@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #4B69FD;
+    --color-primary: #0629da;
     --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
+    --color-tertiary: #fe652b;
     --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-button-hover: #0629da;
+    --color-text: #000000;
     --color-white: #FFFFFF;
 }
 
@@ -16,11 +16,12 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100dvh;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .main-content {
@@ -36,25 +37,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0;
+    padding: 40px;
+}
+
+.header-banner img {
+    max-width: 500px;
+    height: auto;
 }
 
 /* Seção de entrada */
 .input-section {
-    flex: 60%;
+    flex: 80%;
     background-color: var(--color-secondary);
     border: 1px solid #000;
     border-radius: 64px 64px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 50px 0 100px 0;
     width: 100%;
 }
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
+    padding: 0 30px 0 30px;
+    font-size: 60px;
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
@@ -74,9 +81,9 @@ body {
 .input-wrapper {
     display: flex;
     justify-content: center;
-    width: 100%;
     max-width: 600px;
-    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .input-name {
@@ -87,8 +94,14 @@ body {
     font-size: 16px;
 }
 
+.texto {
+    margin-top: 8px;
+    color: var(--color-text);
+    font: bold 1.2rem "Inter", serif;
+}
+
 .button-container {
-    width: 300px;
+    max-width: 600px;
     justify-content: center;
 }
 
@@ -109,28 +122,28 @@ button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
+    background-color: var(--color-button);
+    color: var(--color-white);
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-primary);
 }
 
 /* Listas */
 ul {
     list-style-type: none;
     color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font: bold 1.2rem "Inter", serif;
+    font-size: 22px;
     margin: 20px 0;
 }
 
@@ -146,7 +159,8 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
-    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
@@ -159,4 +173,72 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Site Responsividade */
+@media (max-width: 768px) {
+    .header-banner {
+        padding: 30px;
+    }
+
+    .header-banner img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .input-section {
+        border-radius: 32px 32px 0 0;
+        padding: 40px 0 250px 0;
+    }
+
+    .main-title {
+        font-size: 34px;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    .input-title,
+    .input-name {
+        border-radius: 25px;
+        font-size: 15px;
+    }
+
+    .texto {
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    .result-list {
+        font-size: 0.95rem;
+        font-weight: 700;
+    }
+
+    .button-add {
+        border-radius: 25px;
+        padding: 12px 0 12px 0;
+    }
+    .button-draw {
+        width: 100%;
+        border-radius: 25px;
+        font-size: 16px;
+    }
+
+    .button-draw img {
+        margin-right: 12px;
+    }
 }
